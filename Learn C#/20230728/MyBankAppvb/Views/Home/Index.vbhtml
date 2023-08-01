@@ -1,0 +1,23 @@
+﻿@Code
+    ViewData("Title") = "Home Page"
+End Code
+
+<main>
+    <div class="text-center">
+        <h1 class="display-4">My Bank</h1>
+        <p>家計簿アプリ</p>
+    </div>
+
+    <div class="centered-container">
+        <button id="loginButton" class="btn btn-primary">Log In</button>
+    </div>
+
+
+    <script>
+    // ボタンをクリックしたときに /BankAccount にリダイレクトする処理を追加
+    document.getElementById('loginButton').addEventListener('click', function () {
+        window.location.href = '/Transactions';
+    });
+    </script>
+
+</main>

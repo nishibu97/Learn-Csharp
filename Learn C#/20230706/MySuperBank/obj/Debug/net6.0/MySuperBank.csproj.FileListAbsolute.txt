@@ -1,0 +1,15 @@
+C:\Users\nishibu\source\repos\MySuperBank\bin\Debug\net6.0\MySuperBank.exe
+C:\Users\nishibu\source\repos\MySuperBank\bin\Debug\net6.0\MySuperBank.deps.json
+C:\Users\nishibu\source\repos\MySuperBank\bin\Debug\net6.0\MySuperBank.runtimeconfig.json
+C:\Users\nishibu\source\repos\MySuperBank\bin\Debug\net6.0\MySuperBank.dll
+C:\Users\nishibu\source\repos\MySuperBank\bin\Debug\net6.0\MySuperBank.pdb
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\MySuperBank.csproj.AssemblyReference.cache
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\MySuperBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\MySuperBank.AssemblyInfoInputs.cache
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\MySuperBank.AssemblyInfo.cs
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\MySuperBank.csproj.CoreCompileInputs.cache
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\MySuperBank.dll
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\refint\MySuperBank.dll
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\MySuperBank.pdb
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\MySuperBank.genruntimeconfig.cache
+C:\Users\nishibu\source\repos\MySuperBank\obj\Debug\net6.0\ref\MySuperBank.dll

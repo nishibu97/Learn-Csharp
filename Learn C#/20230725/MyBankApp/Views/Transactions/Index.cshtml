@@ -1,0 +1,104 @@
+﻿@*@model MyBankApp.Models.DashboardViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>ダッシュボード</h2>
+
+<h3>ようこそ @Model.BankAccount.Name さん</h3>
+<h3>総資産 @Model.BankAccount.Balance</h3>
+
+<table class="table">
+    <tr>
+        <th>
+            金額
+        </th>
+        <th>
+            日付
+        </th>
+        <th>
+            内容
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Transactions)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @Html.ActionLink("編集", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("詳細", "Details", new { id = item.ID }) |
+                @Html.ActionLink("削除", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<p>
+    @Html.ActionLink("入出金登録", "Create")
+</p>*@
+
+
+@model IEnumerable<MyBankApp.Models.Transaction>
+
+
+    @{
+        ViewBag.Title = "Index";
+    }
+
+
+    <h2>ダッシュボード</h2>
+
+    <h3>ようこそ  さん</h3>
+    <h3>残高　</h3>
+
+
+    <table class="table">履歴
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Note)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @Html.ActionLink("編集", "Edit", new { id=item.ID }) |
+                @Html.ActionLink("詳細", "Details", new { id=item.ID }) |
+                @Html.ActionLink("削除", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+    }
+
+    </table>
+
+    <p>
+        @Html.ActionLink("入出金登録", "Create")
+    </p>-->

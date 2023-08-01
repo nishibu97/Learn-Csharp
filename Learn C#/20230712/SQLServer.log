@@ -1,0 +1,108 @@
+--
+-- run below commmand from command prompt
+-- sqlcmd -S DESKTOP-I2VPJU5 -E
+--
+
+select @@Version
+go
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Microsoft SQL Server 2022 (RTM) - 16.0.1000.6 (X64)
+        Oct  8 2022 05:58:25
+        Copyright (C) 2022 Microsoft Corporation
+        Developer Edition (64-bit) on Windows 10 Home 10.0 <X64> (Build 22621: ) (Hypervisor)
+
+
+(1 行処理されました)
+1>
+2>
+3> select name from sys.databases;
+4> go
+name
+--------------------------------------------------------------------------------------------------------------------------------
+master
+tempdb
+model
+msdb
+sampleDB
+
+(5 行処理されました)
+1> use sampleDB;
+2> go
+データベース コンテキストが 'sampleDB' に変更されました。
+1> show tables;
+2> go
+メッセージ 2812、レベル 16、状態 62、サーバー DESKTOP-I2VPJU5、行 1
+ストアド プロシージャ 'show' が見つかりませんでした。
+1> SELECT * FROM sys.tables;
+2> go
+name                                                                                                                             object_id   principal_id schema_id   parent_object_id type type_desc                                                    create_date             modify_date             is_ms_shipped is_published is_schema_published lob_data_space_id filestream_data_space_id max_column_id_used lock_on_bulk_load uses_ansi_nulls is_replicated has_replication_filter is_merge_published is_sync_tran_subscribed has_unchecked_assembly_data text_in_row_limit large_value_types_out_of_row is_tracked_by_cdc lock_escalation lock_escalation_desc                                         is_filetable is_memory_optimized durability durability_desc                                              temporal_type temporal_type_desc                                           history_table_id is_remote_data_archive_enabled is_external history_retention_period history_retention_period_unit history_retention_period_unit_desc is_node is_edge data_retention_period data_retention_period_unit data_retention_period_unit_desc ledger_type ledger_type_desc                                             ledger_view_id is_dropped_ledger_table
+-------------------------------------------------------------------------------------------------------------------------------- ----------- ------------ ----------- ---------------- ---- ------------------------------------------------------------ ----------------------- ----------------------- ------------- ------------ ------------------- ----------------- ------------------------ ------------------ ----------------- --------------- ------------- ---------------------- ------------------ ----------------------- --------------------------- ----------------- ---------------------------- ----------------- --------------- ------------------------------------------------------------ ------------ ------------------- ---------- ------------------------------------------------------------ ------------- ------------------------------------------------------------ ---------------- ------------------------------ ----------- ------------------------ ----------------------------- ---------------------------------- ------- ------- --------------------- -------------------------- ------------------------------- ----------- ------------------------------------------------------------ -------------- -----------------------
+Table_1                                                                                                                            901578250         NULL           1                0 U    USER_TABLE                                                   2023-07-12 15:48:24.303 2023-07-12 15:48:24.313             0            0                   0                 0                     NULL                  2                 0               1             0                      0                  0                       0                           0                 0                            0                 0               0 TABLE                                                                   0                   0          0 SCHEMA_AND_DATA                                                          0 NON_TEMPORAL_TABLE                                                       NULL                              0           0                     NULL                          NULL NULL                                     0       0                    -1                         -1 INFINITE                                  0 NON_LEDGER_TABLE                                                       NULL                       0
+
+(1 行処理されました)
+1> select * from table_1;
+2> go
+id          Name
+----------- --------------------------------------------------
+
+(0 行処理されました)
+1> insert into table_1 (id, Name) values (1, 'Apple');
+2> go
+
+(1 行処理されました)
+1> select * from table_1;
+2> go
+id          Name
+----------- --------------------------------------------------
+          1 Apple
+
+(1 行処理されました)
+1> select * from table_1;
+2> go
+id          Name
+----------- --------------------------------------------------
+          1 Apple
+
+(1 行処理されました)
+1> select name from sys.tables;
+2> go
+name
+--------------------------------------------------------------------------------------------------------------------------------
+Table_1
+users
+
+(2 行処理されました)
+1> select * from users;
+2> go
+user_id     user_name                                          password                                           create_at        update_at        delete_at
+----------- -------------------------------------------------- -------------------------------------------------- ---------------- ---------------- ----------------
+
+(0 行処理されました)
+1> insert into table_1 (id, Name) values (2, 'Orange');
+2> go
+
+(1 行処理されました)
+1> insert into table_1 (id, Name) values (3, 'Grape');
+2> go
+
+(1 行処理されました)
+1> insert into table_1 (id, Name) values (4, 'Banana');
+2> go
+
+(1 行処理されました)
+1> insert into table_1 (id, Name) values (5, 'Pearch');
+2> select * from table_1;
+3> go
+
+(1 行処理されました)
+id          Name
+----------- --------------------------------------------------
+          1 Apple
+          2 Orange
+          3 Grape
+          4 Banana
+          5 Pearch
+
+(5 行処理されました)
+1>
