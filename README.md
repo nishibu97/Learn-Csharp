@@ -1,6 +1,6 @@
 # Learn C-sharp
 
-## 宮吉保守案件で必要になるスキルのC#,.NET Framework,Visual Basicについて学習するプロジェクト
+## C#,.NET Framework,Visual Basicについて学習するプロジェクト
 
 
 # C#学習スケジュール
@@ -24,6 +24,7 @@
 [Microsoft: Visual Studio 2019 で最初の WPF アプリケーションを作成する](https://learn.microsoft.com/ja-jp/dotnet/desktop/wpf/getting-started/walkthrough-my-first-wpf-desktop-application?view=netframeworkdesktop-4.8)
 - データベースに関連する操作（データの取得、追加、更新、削除）を含むをアプリを作成する。(5日)
 - SQL serverのinstall
+- https://learn.microsoft.com/ja-jp/aspnet/mvc/
 
 ## 4週目
 - webアプリ開発のバッファ& VBについて学習 (2日)
